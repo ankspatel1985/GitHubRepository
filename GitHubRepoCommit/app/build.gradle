@@ -31,6 +31,19 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    testOptions {
+        animationsDisabled = true
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+    sourceSets {
+        test {
+            resources {
+                srcDirs = [ 'src/test/resources']
+            }
+        }
+    }
 }
 
 dependencies {
