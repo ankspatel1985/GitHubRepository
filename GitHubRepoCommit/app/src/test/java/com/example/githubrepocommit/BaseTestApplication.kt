@@ -1,8 +1,10 @@
 package com.example.githubrepocommit
 
+import com.example.githubrepocommit.model.apis.GitHubApiEndPoints
 import com.example.githubrepocommit.model.modules.DaggerTestAppComponent
 import com.example.githubrepocommit.model.modules.NetworkModule
 import com.example.githubrepocommit.model.modules.TestAppComponent
+import com.example.githubrepocommit.viewModel.GitHubCommitsViewModelFactory
 import com.squareup.okhttp.mockwebserver.MockResponse
 import com.squareup.okhttp.mockwebserver.MockWebServer
 import dagger.android.AndroidInjector
@@ -23,6 +25,12 @@ abstract class BaseTestApplication : HasAndroidInjector {
      * Mock web server.
      */
     lateinit var mockServer: MockWebServer
+
+    @Inject
+    lateinit var factory: GitHubCommitsViewModelFactory
+
+    @Inject
+    lateinit var gitHubApi: GitHubApiEndPoints
 
     @Inject
     lateinit var dispatchingAndroidInjector: DispatchingAndroidInjector<Any>
