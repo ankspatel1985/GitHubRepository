@@ -1,7 +1,6 @@
 package com.example.githubrepocommit.model.modules
 
 import com.example.githubrepocommit.view.GitHubApplication
-import com.example.githubrepocommit.viewModel.repositories.Repository
 import dagger.Component
 import dagger.android.AndroidInjectionModule
 import javax.inject.Singleton
@@ -14,7 +13,8 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         NetworkModule::class,
-        GitHubRepositoryModule::class
+        GitHubRepositoryModule::class,
+        ViewModelModule::class
     ]
 )
 interface AppComponent {
