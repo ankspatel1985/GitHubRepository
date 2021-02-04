@@ -5,7 +5,6 @@ import com.example.githubrepocommit.viewModel.repositories.GitHubRepository
 import com.example.githubrepocommit.viewModel.repositories.Repository
 import dagger.Module
 import dagger.Provides
-import javax.inject.Singleton
 
 /**
  * Dagger module to provide [GitHubRepository].
@@ -14,7 +13,7 @@ import javax.inject.Singleton
 class GitHubRepositoryModule {
 
     @Provides
-    @Singleton
+    @ActivityScope
     fun providesRepository(gitHubApiEndPoints: GitHubApiEndPoints): Repository {
         return GitHubRepository(gitHubApiEndPoints)
     }

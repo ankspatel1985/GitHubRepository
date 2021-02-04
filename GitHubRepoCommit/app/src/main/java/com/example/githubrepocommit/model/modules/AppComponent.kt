@@ -13,8 +13,7 @@ import javax.inject.Singleton
     modules = [
         AndroidInjectionModule::class,
         NetworkModule::class,
-        GitHubRepositoryModule::class,
-        ViewModelModule::class
+        GitHubCommitsFragmentBuilder::class
     ]
 )
 interface AppComponent {

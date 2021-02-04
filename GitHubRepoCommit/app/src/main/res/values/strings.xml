@@ -6,4 +6,5 @@
     <string name="user_hint">User name</string>
     <string name="repo_hint">Repository</string>
     <string name="search_result_header">Results</string>
+    <string name="no_result_found_message">No result found</string>
 </resources>
