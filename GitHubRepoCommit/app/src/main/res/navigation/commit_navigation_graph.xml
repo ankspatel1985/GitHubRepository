@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commit_naviagation_graph"
+    app:startDestination="@id/commit_search_fragment">
+
+    <fragment
+        android:id="@+id/commit_search_fragment"
+        android:name="com.example.githubrepocommit.view.fragments.GitHubCommitsFragment"
+        android:label="fragment_commitSearch"
+        tools:layout="@layout/commit_search_fragment" />
+
+</navigation>

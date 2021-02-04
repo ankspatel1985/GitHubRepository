@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">GitHubRepoCommit</string>
+
+    <string name="search_header">GitHub Commits Search:</string>
 </resources>
