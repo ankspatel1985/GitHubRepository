@@ -2,4 +2,8 @@
     <string name="app_name">GitHubRepoCommit</string>
 
     <string name="search_header">GitHub Commits Search:</string>
+    <string name="search">Search</string>
+    <string name="user_hint">User name</string>
+    <string name="repo_hint">Repository</string>
+    <string name="search_result_header">Results</string>
 </resources>
